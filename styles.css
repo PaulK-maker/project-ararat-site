@@ -143,3 +143,54 @@ body {
     margin: 1.25rem;
   }
 }
+
+.shirts {
+  max-width: 950px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.slide-window {
+  width: 260px;
+  text-align: center;
+}
+
+.slide-window img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+.slide-window p {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.nav {
+  border: none;
+  background: #eee;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.nav:hover {
+  background: #ddd;
+}
+
+.shirt-actions {
+  margin-top: 1rem;
+}
