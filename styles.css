@@ -138,43 +138,10 @@ body {
   color: #555;
 }
 
-@media (max-width: 720px) {
-  .card {
-    margin: 1.25rem;
-  }
-}
-
+/* Desktop / default shirts */
 .shirts {
-  max-width: 950px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
-}
-
-.carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  margin-top: 1rem;
-}
-
-.slide-window {
-  width: 260px;
-  text-align: center;
-}
-
-.slide-window img {
-  width: 100%;
-  border-radius: 10px;
-  border: 2px solid #ddd;
-}
-
-.slide-window p {
-  margin-top: 0.5rem;
-  font-weight: 600;
+  max-width: 100%;
+  margin: 1rem 0;
 }
 
 .nav {
@@ -193,4 +160,61 @@ body {
 
 .shirt-actions {
   margin-top: 1rem;
+}
+
+/* Make hero and main card edges line up */
+.hero {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* Ensure verse / giving area uses same inner width as shirts */
+.card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Reduce extra top margin on shirts heading */
+.shirts h3 {
+  margin-top: 0.25rem;
+}
+
+/* Single mobile media query */
+@media (max-width: 720px) {
+  .card {
+    flex-direction: column;
+    margin: 0.75rem;
+    padding: 1.25rem;
+  }
+
+  .card-left,
+  .card-right {
+    flex: 1 1 100%;
+  }
+
+  .photo-frame {
+    width: 100%;
+  }
+
+  .shirts {
+    max-width: 100%;
+    margin: 1rem 0 0;
+    padding: 1rem 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .carousel {
+    flex-direction: column;
+  }
+
+  .slide-window {
+    width: 100%;
+  }
+
+  .shirt-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
