@@ -19,11 +19,11 @@ document.getElementById('copyZelle')?.addEventListener('click', () => {
 
 // T-shirt carousel
 const shirts = [
-  { src: 'assets/shirt1.jpg', caption: 'Design 1 – Lion & Mountain' },
-  { src: 'assets/shirt2.jpg', caption: 'Design 2 – Project ARARAT Badge' },
-  { src: 'assets/shirt3.jpg', caption: 'Design 3 – Verse & Cross' },
-  { src: 'assets/shirt4.jpg', caption: 'Design 4 – Kenyan & American Flag' },
-  { src: 'assets/shirt5.jpg', caption: 'Design 5 – Joyland Logo' }
+  { src: 'assets/HERO.JPG', caption: 'Design 1 – HERO1' },
+  { src: 'assets/jesus_wins.JPG', caption: 'Design 2 – JESUS' },
+  { src: 'assets/PNW.JPG', caption: 'Design 3 – PNW' },
+  { src: 'assets/HERO2.JPG', caption: 'Design 4 – HeRO' },
+  { src: 'assets/HERO.JPG', caption: 'Design 5 – Joyland Logo' }
 ];
 
 let currentShirt = 0;
