@@ -53,7 +53,7 @@ body {
   flex: 1 1 280px;
 }
 
-.photo-frame {
+/* .photo-frame {
   border: 3px solid var(--gold);
   border-radius: 10px;
   height: 260px;
@@ -65,8 +65,30 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+} */
+
+
+.photo-frame {
+  border: 3px solid var(--gold);
+  border-radius: 10px;
+  height: 260px;          /* controls vertical size */
+  width: 100%;            /* full card width */
+  max-width: 320px;       /* optional: cap width */
+  margin: 0 auto;         /* center in the card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #faf7f0;
 }
 
+/* for the <img> you put inside */
+.photo-frame img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;    /* or 'cover' if you want it to crop to fill */
+}
 .badge {
   margin-top: 1rem;
   display: inline-block;
