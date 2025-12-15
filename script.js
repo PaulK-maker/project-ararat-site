@@ -23,7 +23,7 @@ const shirts = [
   { src: 'assets/jesus_wins.JPG', caption: 'Design 2 – JESUS' },
   { src: 'assets/PNW.JPG', caption: 'Design 3 – PNW' },
   { src: 'assets/SHEPHERED.JPG', caption: 'Design 4 – HeRO' },
-  { src: 'assets/WINNNER.JPG', caption: 'Design 5 – Joyland Logo' }
+  { src: 'assets/ARISE.JPG', caption: 'Design 5 – Joyland Logo' }
 ];
 
 let currentShirt = 0;
