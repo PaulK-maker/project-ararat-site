@@ -22,7 +22,7 @@ const shirts = [
   { src: 'assets/HERO.JPG', caption: 'Design 1 – HERO1' },
   { src: 'assets/WINS.png', caption: 'Design 2 – JESUS' },
   { src: 'assets/PNW.JPG', caption: 'Design 3 – PNW' },
-  { src: 'assets/SHEPHERED1.png', caption: 'Design 4 – HeRO' },
+  { src: 'assets/SHEPHERD1.png', caption: 'Design 4 – HeRO' },
   { src: 'assets/ARISE1.png', caption: 'Design 5 – Joyland Logo' }
 ];
 
