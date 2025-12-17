@@ -1,97 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Project ARARAT – Joyland Christian Church</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="hero">
-    <h1>Project ARARAT</h1>
-    <h2>Joyland Christian Church – Building a Legacy</h2>
-    <p>Together we are building a permanent house for the Lord.</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project ARARAT – Joyland Christian Church</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Project ARARAT</h1>
+      <h2>Joyland Christian Church – Building a Legacy</h2>
+      <p>Together we are building a permanent house for the Lord.</p>
+    </header>
 
-  <main class="card">
-    <section class="card-left">
-      <div class="photo-frame">
-         <img src="assets/my-photo.jpeg" alt="Supporter photo">
-        <!-- <span>Your Photo Here</span> -->
-      </div>
-      <div class="badge">
-        Please Support my Cause 😊
-      </div>
-      
-<!-- SECTION TO CHOOSE SHIRT -->
-      <section class="shirts">
-  <h3>With a Contribution of over $100 you get a T‑Shirt</h3>
-  <p>Select a design you like, then send us your size and details.</p>
+    <main class="card">
+      <section class="card-left">
+        <div class="photo-frame">
+          <img src="assets/my-photo.jpeg" alt="Supporter photo" />
+          <!-- <span>Your Photo Here</span> -->
+        </div>
+        <div class="badge">Please Support my Cause 😊</div>
 
-  <div class="carousel">
-    <button class="nav prev" id="prevShirt">&#10094;</button>
+        <!-- SECTION TO CHOOSE SHIRT -->
+        <section class="shirts">
+          
+          <h3>With a Contribution of over $150 Choose a Free T‑Shirt</h3>
+<p>Select a design you like, then send us your size or customization details.</p>
+<p><em>Please allow at least 15 days for your T‑shirt order to be processed.</em></p>
+          
 
-    <div class="slide-window">
-      <img id="shirtImage" src="assets/HERO.JPG" alt="T‑shirt design 1">
-      <p id="shirtCaption">Design 1 – HERO</p>
-    </div>
+          <div class="carousel">
+            <button class="nav prev" id="prevShirt">&#10094;</button>
 
-    <button class="nav next" id="nextShirt">&#10095;</button>
-  
-  </div>
+            <div class="slide-window">
+              <img
+                id="shirtImage"
+                src="assets/HERO.JPG"
+                alt="T‑shirt design 1"
+              />
+              <p id="shirtCaption">Design 1 – HERO</p>
+            </div>
 
-  <div class="shirt-actions">
-    <!-- Option A: email with subject/body -->
-    <a id="orderEmail" class="btn"
-       href="mailto:your-email@example.com?subject=Project%20ARARAT%20T-Shirt%20Order&body=I%20would%20like%20Design%201.%20My%20size%20is%3A%20">
-      Email My Size & Design
-    </a>
+            <button class="nav next" id="nextShirt">&#10095;</button>
+          </div>
 
-    <!-- Option B: simple external form (Google Form etc.) -->
-    <!-- <a class="btn" href="https://forms.gle/your-form-id" target="_blank" rel="noopener">
+          <div class="shirt-actions">
+            <!-- Option A: email with subject/body -->
+            <a
+              id="orderEmail"
+              class="btn"
+              href="mailto:your-email@example.com?subject=Project%20ARARAT%20T-Shirt%20Order&body=I%20would%20like%20Design%201.%20My%20size%20is%3A%20"
+            >
+              Email My Size & Design
+            </a>
+
+            <!-- Option B: simple external form (Google Form etc.) -->
+            <!-- <a class="btn" href="https://forms.gle/your-form-id" target="_blank" rel="noopener">
       Fill Order Form
     </a> -->
-  </div>
-</section>
-    </section>
+          </div>
+        </section>
+      </section>
 
-    <section class="card-right">
-      <div class="verse">
-        <p class="verse-text">
-          “Go up into the mountains and bring down timber and build my house,
-          so that I may take pleasure in it and be honored.”
-        </p>
-        <p class="verse-ref">Haggai 1:8</p>
-      </div>
-
-      <div class="give">
-        <h3>Partner with Project ARARAT</h3>
-        <p>Select a way to give:</p>
-
-        <a class="btn cashapp"
-           href="https://cash.app/$Greatkaranja"
-           target="_blank" rel="noopener">
-          Give via Cash App
-        </a>
-
-        <div class="zelle-box">
-          <h4>Zelle Giving</h4>
-          <p>Send to: <strong>your-zelle-email@example.com</strong></p>
-          <button id="copyZelle">515-525-3366</button>
+      <section class="card-right">
+        <div class="verse">
+          <p class="verse-text">
+            “Go up into the mountains and bring down timber and build my house,
+            so that I may take pleasure in it and be honored.”
+          </p>
+          <p class="verse-ref">Haggai 1:8</p>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <p>Courtesy of Joyland Christian Church – Project ARARAT</p>
+        <div class="give">
+          <h3>Partner with Project ARARAT</h3>
+          <p>Select a way to give:</p>
 
-     <p class="privacy">
-    We do not collect or store your payment information on this site.
-    Giving is processed securely through Cash App and Zelle.
-  </p>
-  </footer>
+          <a
+            class="btn cashapp"
+            href="https://cash.app/$Greatkaranja"
+            target="_blank"
+            rel="noopener"
+          >
+            Give via Cash App
+          </a>
 
-  <script src="script.js"></script>
-</body>
+          <div class="zelle-box">
+            <h4>Zelle Giving</h4>
+            <p>Send to: <strong>Zelle Number</strong></p>
+            <button id="copyZelle">515-525-3366</button>
+          </div>
+
+          <a
+            class="btn-Venmo"
+            href="https://venmo.com/@karanja-p"
+            target="_blank"
+            rel="noopener"
+          >
+            Give via Venmo
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Courtesy of Joyland Christian Church – Project ARARAT</p>
+
+      <p class="privacy">
+        We do not collect or store your payment information on this site. Giving
+        is processed securely through Cash App and Zelle.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -153,6 +153,23 @@ body {
   cursor: pointer;
 }
 
+.btn-Venmo {
+  display: inline-block;
+  margin: 0.4rem 0;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+
+  background-color: #3D95CE; /* Venmo blue */
+  color: #fff;
+}
+
+.btn-Venmo:hover {
+  background-color: #347fb0; /* slightly darker on hover */
+}
+
 .footer {
   text-align: center;
   padding: 1.5rem 1rem 2rem;
