@@ -131,29 +131,33 @@ body {
   border: none;
 }
 
-.cashapp {
-  background: #00c244;
+.zelle-box {
+  margin: 1.5rem 0;          /* space above/below Zelle section */
 }
 
-.zelle-box {
-  margin-top: 1rem;
+.zelle-box h4 {
+  margin-bottom: 0.5rem;     /* tighten title to “Send to” line */
 }
 
 .zelle-row {
   display: flex;
-  align-items: center;       /* vertically centers text and button */
-  gap: 0.75rem;              /* space between label and button */
-  flex-wrap: wrap;           /* lets it wrap on small screens */
+  align-items: center;       /* vertically align text + button */
+  gap: 0.75rem;              /* space between text and button */
+  flex-wrap: wrap;           /* wrap on small screens if needed */
+}
+
+.zelle-row p {
+  margin: 0;                 /* remove extra paragraph margin */
 }
 
 #copyZelle {
-  padding: 0.4rem 0.75rem;
-  border-radius: 4px;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
   border: none;
   background-color: #4b6fd3;
   color: #fff;
-  cursor: pointer;
   font-size: 0.95rem;
+  cursor: pointer;
 }
 
 .btn-Venmo {
