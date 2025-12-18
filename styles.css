@@ -18,6 +18,8 @@ body {
   color: #222;
 }
 
+/* HERO */
+
 .hero {
   text-align: center;
   padding: 2.5rem 1.25rem;
@@ -36,6 +38,8 @@ body {
   font-size: 1.1rem;
 }
 
+/* CARD LAYOUT */
+
 .card {
   max-width: 950px;
   margin: 2rem auto;
@@ -53,42 +57,31 @@ body {
   flex: 1 1 280px;
 }
 
-/* .photo-frame {
-  border: 3px solid var(--gold);
-  border-radius: 10px;
-  height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #faf7f0;
-  color: #777;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-} */
-
+/* PHOTO FRAME */
 
 .photo-frame {
   border: 3px solid var(--gold);
   border-radius: 10px;
-  height: 260px;          /* controls vertical size */
-  width: 100%;            /* full card width */
-  max-width: 320px;       /* optional: cap width */
-  margin: 0 auto;         /* center in the card */
+  height: 260px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #faf7f0;
 }
 
-/* for the <img> you put inside */
 .photo-frame img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
-  object-fit: contain;    /* or 'cover' if you want it to crop to fill */
+  object-fit: contain;
 }
+
+/* BADGE */
+
 .badge {
   margin-top: 1rem;
   display: inline-block;
@@ -100,6 +93,8 @@ body {
   font-size: 0.9rem;
   text-align: center;
 }
+
+/* VERSE */
 
 .verse {
   margin-bottom: 1.5rem;
@@ -116,9 +111,7 @@ body {
   color: var(--blue);
 }
 
-.give h3 {
-  margin-top: 0;
-}
+/* GENERIC BUTTONS */
 
 .btn {
   display: inline-block;
@@ -129,26 +122,55 @@ body {
   font-weight: 600;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 
+/* CASH APP + VENMO (BIG BUTTONS) */
+
+.btn.cashapp,
+.btn.venmo {
+  width: 100%;
+  text-align: center;
+}
+
+.btn.cashapp {
+  background-color: #00c244;
+}
+
+.btn.cashapp:hover {
+  background-color: #00a83a;
+}
+
+.btn.venmo {
+  background-color: #3d95ce;
+}
+
+.btn.venmo:hover {
+  background-color: #347fb0;
+}
+
+/* ZELLE AREA */
+
 .zelle-box {
-  margin: 1.5rem 0;          /* space above/below Zelle section */
+  margin: 1.5rem 0 0.75rem;
 }
 
 .zelle-box h4 {
-  margin-bottom: 0.5rem;     /* tighten title to “Send to” line */
+  margin: 0 0 0.5rem;
 }
 
 .zelle-row {
   display: flex;
-  align-items: center;       /* vertically align text + button */
-  gap: 0.75rem;              /* space between text and button */
-  flex-wrap: wrap;           /* wrap on small screens if needed */
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 .zelle-row p {
-  margin: 0;                 /* remove extra paragraph margin */
+  margin: 0;
 }
+
+/* smaller Zelle button but same visual family as .btn */
 
 #copyZelle {
   padding: 0.45rem 0.9rem;
@@ -160,22 +182,7 @@ body {
   cursor: pointer;
 }
 
-.btn-Venmo {
-  display: inline-block;
-  margin: 0.4rem 0;
-  padding: 0.7rem 1.4rem;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  border: none;
-
-  background-color: #3D95CE; /* Venmo blue */
-  color: #fff;
-}
-
-.btn-Venmo:hover {
-  background-color: #347fb0; /* slightly darker on hover */
-}
+/* FOOTER */
 
 .footer {
   text-align: center;
@@ -184,10 +191,15 @@ body {
   color: #555;
 }
 
-/* Desktop / default shirts */
+/* SHIRTS SECTION */
+
 .shirts {
   max-width: 100%;
   margin: 1rem 0;
+}
+
+.shirts h3 {
+  margin-top: 0.25rem;
 }
 
 .nav {
@@ -208,25 +220,57 @@ body {
   margin-top: 1rem;
 }
 
-/* Make hero and main card edges line up */
+/* Keep hero/card edges aligned */
+
 .hero {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
 
-/* Ensure verse / giving area uses same inner width as shirts */
+/* Right side vertical spacing */
+
 .card-right {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 
-/* Reduce extra top margin on shirts heading */
-.shirts h3 {
-  margin-top: 0.25rem;
+/* CAROUSEL */
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-/* Single mobile media query */
+.slide-window {
+  width: 260px;
+  height: 260px;
+  border-radius: 10px;
+  background: #faf7f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#shirtImage {
+  max-width: 100%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+#shirtCaption {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+
 @media (max-width: 720px) {
   .card {
     flex-direction: column;
@@ -234,14 +278,6 @@ body {
     padding: 1.25rem;
   }
 
-  /* @media (max-width: 720px) {
-  .slide-window {
-    width: 100%;
-    max-width: 320px;
-    height: 260px;
-    margin: 0 auto;
-  }
-} */
   .card-left,
   .card-right {
     flex: 1 1 100%;
@@ -259,38 +295,12 @@ body {
     border-radius: 0;
   }
 
- /* Carousel layout */
-.carousel {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-  /* The visible area for the shirt */
-.slide-window {
-  width: 260px;          /* adjust to taste */
-  height: 260px;         /* square area */
-  border-radius: 10px;
-  background: #faf7f0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;      /* hide overflow so big PNGs don’t blow out */
+  .btn.cashapp,
+  .btn.venmo {
+    width: 100%;
+  }
 }
 
-/* The shirt image inside the window */
-#shirtImage {
-  max-width: 100%;
-  max-height: 80%;       /* leave room for caption */
-  width: auto;
-  height: auto;
-  object-fit: contain;   /* scale down, no distortion */
-}
 
-/* Caption under the image */
-#shirtCaption {
-  margin-top: 0.25rem;
-  font-size: 0.9rem;
-  text-align: center;
-}
-}
+
+
